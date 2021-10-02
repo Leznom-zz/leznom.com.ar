@@ -1,0 +1,26 @@
+$TTL    14400
+@       IN      SOA     leznom.com.ar. root.leznom.com.ar. (
+                        2021092923      ; Serial
+                             7200       ; Refresh
+                             3600       ; Retry
+                          1209800       ; Expire
+                              180 )     ; Negative Cache TTL
+
+;
+@       14400   IN      NS              ns1.leznom.com.ar.
+@       14400   IN      NS              ns2.leznom.com.ar.
+@       14400   IN      A               104.168.122.184
+ns1     14400   IN      A               104.168.122.184
+ns2     14400   IN      A               104.168.122.184
+
+www     14400   IN      A               104.168.122.184
+pure    14400   IN      A               104.168.122.184
+
+@       14400   IN      TXT     zoho-verification=zb6454587.zmverify.zoho.com
+@       14400   IN      MX      10      mx.zoho.com.
+@       14400   IN      MX      20      mx2.zoho.com.
+@       14400   IN      MX      50      mx3.zoho.com.
+
+@       14400   IN      TXT             "v=spf1 include:zoho.com ~all".........
+default._domainkey 14400 IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBA.......
+_dmarc  14400   IN      TXT     "v=DMARC1; p=none; rua=mailto:angelgmthi.......
